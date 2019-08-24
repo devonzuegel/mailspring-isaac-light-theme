@@ -20,15 +20,7 @@
 	}
 }
 
-// Popovers
-.nylas-date-input {
-	text-align: left;
-		.date-interpretation {
-			color: @isaac-dark;
-			font-size: 1em;
-	}
-}
-.fixed-popover-container {
+.fixed-popover-container div:not(.date-picker-popover) {
 	.fixed-popover-pointer {
 		background-color: darken(@isaac-light, 5%);
 		&.shadow {
@@ -369,6 +361,36 @@
 
 		}
 	}
+}
+
+.fixed-popover-container .date-picker-popover {
+	.fixed-popover-pointer {
+		background: darken(@isaac-light, 90%);
+	}
+	.fixed-popover {
+		background: darken(@isaac-light, 90%);
+		color: white;
+		input, input[type='text'] {
+			background: darken(@isaac-light, 90%);
+			color: @isaac-light !important;
+		}
+	}
+	input, input[type='text'] {
+		// background: darken(@isaac-light, 5%);
+		box-shadow: none !important;
+		border: none !important;
+		// color: @isaac-dark !important;
+		font-weight: 500;
+		text-indent: 5px;
+	}
+	// 	// Popovers
+	// .nylas-date-input {
+	// 	text-align: left;
+	// 		.date-interpretation {
+	// 			color: @isaac-dark;
+	// 			font-size: 1em;
+	// 	}
+	// }
 }
 
 /* Tutorial Tips */

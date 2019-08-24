@@ -245,7 +245,7 @@
 			.message-item-white-wrap {
 				background-color: @white;
 				color: darken(@isaac-light, 20%);
-				padding: 20px 40px;
+				padding: 20px 20px;
 				.message-item-area {
 					font-size: 1em;
 					.collapsed-snippet {
@@ -524,13 +524,14 @@ iframe {
 	max-width: 800px;
 	margin: auto;
 	.message-header {
-		padding: 40px 40px;
+		padding: 20px;
 		&::before {
 			background-color: @white;
 			left: 0;
     	right: 0;
 		}
 	}
+
 	.show-hidden-messages  {
 		background: darken(@isaac-light, 5%) !important;
 		border: none;
@@ -544,6 +545,12 @@ iframe {
 			display: block;
 		}
 	}
+}
+
+.message-iframe-container {
+	padding: 20px;
+	margin: 0;
+	height: fit-content !important;
 }
 
 .mode-split #message-list {
