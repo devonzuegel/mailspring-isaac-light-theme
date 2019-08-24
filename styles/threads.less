@@ -27,7 +27,7 @@
 	&.keyboard-cursor {
 		border-left: 4px solid @isaac-accent;
 		&.selected {
-			border-left: 4px solid lighten(@isaac-accent, 10%);;
+			border-left: 4px solid lighten(@isaac-accent, 10%);
 		}
 	}
 	.checkmark .inner {
@@ -377,4 +377,13 @@
 	.scroll-region-content {
 		width: 97%;
 	}
+}
+
+
+.list-column-HoverActions {
+	display: none !important;
+}
+
+.list-container .list-item.focused {
+	background-color: lighten(@isaac-accent, 30%) !important;
 }

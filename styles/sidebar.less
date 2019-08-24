@@ -4,7 +4,7 @@
 
 .column-RootSidebar {
 	background-color: darken(@isaac-light, 1%);
-	padding: 15px 15px 0px;
+	padding: 4px 4px 0px;
 	.account-sidebar {
 		background: none;
 	}
@@ -126,7 +126,7 @@
 				padding: 7px 0 7px 11px !important;
 				width: 15px;
 				div {
-					border-left-color: darken(@isaac-light, 10%);
+					border-left-color: darken(@isaac-light, 30%);
 					border-top-width: 3px;
 					border-bottom-width: 3px;
 					border-left-width: 5px;
@@ -145,6 +145,7 @@
 					font-size: 9px;
 					padding-left: 6px;
 					text-align: left;
+					display: none;
 				}
 				&:hover {
 					color: darken(@isaac-dark, 20%);
@@ -161,18 +162,18 @@
 			}
 		}
 		.item-children {
-			padding-left: 0;
+			// padding-left: 0;
 			.item-container {
 				.item {
 					overflow: visible;
 					.name {
 						overflow: visible;
-						&:before {
-						    content: "·";
-								color: @isaac-accent;
-						    padding-right: 9px;
-						    margin-left: -12px;
-						}
+						// &:before {
+						//     content: "·";
+						// 		color: @isaac-accent;
+						//     padding-right: 9px;
+						// 		margin-left: -12px;
+						// }
 					}
 				}
 			}
