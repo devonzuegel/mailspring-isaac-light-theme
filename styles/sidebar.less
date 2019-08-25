@@ -77,7 +77,8 @@
 		}
 		// Hide icons
 		.item .icon {
-			display: none;
+			// display: none;
+			padding-left: 10px;
 		}
 
 		.item {
@@ -134,7 +135,7 @@
 				}
 			}
 			.item {
-				color: @isaac-dark;
+				color: lighten(@isaac-dark, 15%);
 				cursor: pointer !important;
 				.item-count-box {
 					background: transparent !important;
@@ -152,6 +153,7 @@
 				}
 				&.selected {
 					color: @black !important;
+					font-weight: 500;
 					background-color: transparent;
 					.icon {
 						img {
@@ -162,7 +164,10 @@
 			}
 		}
 		.item-children {
-			// padding-left: 0;
+			padding-left: 0;
+			.item .icon {
+				display: none;
+			}
 			.item-container {
 				.item {
 					overflow: visible;
