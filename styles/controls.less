@@ -63,9 +63,21 @@ pre {
 					}
 					.unread-count.active {
 						border-radius: 100px;
-						background-color: @isaac-dark;
-						color: darken(@isaac-light, 10%);
+						background-color: transparent;
+						color: @isaac-dark;
 						padding: 0 3px;
+						font-size: 11px;
+						transition: all .2s;
+					}
+					&:hover {
+						cursor: pointer;
+
+						.unread-count.active {
+							font-size: 13px;
+							transition: all .2s;
+							right: -8px;
+							top: 6px;
+						}
 					}
 					.item-compose .content-mask {
 						background: lighten(@isaac-dark, 30%);
