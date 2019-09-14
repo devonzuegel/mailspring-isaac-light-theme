@@ -154,7 +154,7 @@
 				&.selected {
 					color: @black !important;
 					font-weight: 500;
-					background-color: transparent;
+					background-color: @isaac-accent-mid;
 					.icon {
 						img {
 							background: @black !important;
@@ -194,4 +194,10 @@
   50% {
     background-color: transparent;
   }
+}
+
+.disclosure-triangle ~ .item.selected {
+	background-color: @isaac-accent-mid;
+	margin-left: -10px;
+	padding-left: 8px;
 }
