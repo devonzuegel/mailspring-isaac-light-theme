@@ -105,7 +105,9 @@
 	// Collapsed Thread
 	.minified-bundle {
 		z-index: 10;
+		cursor: pointer;
 		.msg-line {
+			cursor: pointer;
 			background: transparent;
     	border: none;
     	box-shadow: none;
@@ -113,8 +115,9 @@
 		}
 		// Stack Counter
 		.num-messages {
-			background: @isaac-light;
-			border-color: @isaac-light;
+			cursor: pointer !important;
+			background: lighten(@isaac-dark, 59%);
+			border-color: lighten(@isaac-dark, 59%);
 			color: @isaac-dark;
 			margin-top: -18px;
 		}
@@ -277,10 +280,11 @@
 				display: none;
 			}
 			.reply-text {
-				border: 1px solid @isaac-border;
+				border: 1px solid @isaac-accent-mid;
 				border-radius: 50px;
 				color: @isaac-accent;
 				padding: 8px 20px;
+				cursor: pointer;
 				transition: all .2s ease-in-out;
 				-webkit-transition: all .2s ease-in-out;
 			}
